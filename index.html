@@ -47,10 +47,11 @@
                 console.log(("You Win, congrats! Scissors beats Paper"));
             } else {
                 console.log("It's a tie");
-                return ("tie")
+                return ("tie");
             } 
         }
 
+        
         function game(){
             /*setting to 0 the counting record variables */
             let playerScore = 0;
@@ -66,10 +67,13 @@
                 let result = playRound(playerSelection, computerSelection);
                 if (result === "player win"){
                     playerScore++;
+                    console.log(`Score: You ${playerScore} - Computer${computerScore} - Ties ${ties}`);
                 }else if (result === "computer win"){
                     computerScore++;
+                    console.log(`Score: You ${playerScore} - Computer${computerScore} - Ties ${ties}`);
                 } else {
                     ties++;
+                    console.log(`Score: You ${playerScore} - Computer${computerScore} - Ties ${ties}`);
                 }
 
             }/********************************************************************/
@@ -80,15 +84,13 @@
             } else if (playerScore < computerScore){
                 console.log("You're lost. COmputer win!!!");
             } else {
-                console.log("It's a tie! Will you play again?")
+                console.log("It's a tie! Will you play again?");
             }/***************************************************************/
         }
 
         game();/*Callin the function game*/
 
-        /*
-            falta mostrar elscore en cada ronda, y al final
-        /*
+/**/
 
     </script>
 </body>
