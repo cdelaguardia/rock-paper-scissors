@@ -66,14 +66,14 @@
 
                 let result = playRound(playerSelection, computerSelection);
                 if (result === "player win"){
-                    playerScore++;
-                    console.log(`Score: You ${playerScore} - Computer${computerScore} - Ties ${ties}`);
+                    playerScore++; /*Incrementing playerScore variable*/
+                    console.log(`Score: You ${playerScore} - Computer ${computerScore} - Ties ${ties}`);
                 }else if (result === "computer win"){
-                    computerScore++;
-                    console.log(`Score: You ${playerScore} - Computer${computerScore} - Ties ${ties}`);
+                    computerScore++; /*Incrementing computerScore variable*/
+                    console.log(`Score: You ${playerScore} - Computer ${computerScore} - Ties ${ties}`);
                 } else {
-                    ties++;
-                    console.log(`Score: You ${playerScore} - Computer${computerScore} - Ties ${ties}`);
+                    ties++; /*Incrementing ties variable*/
+                    console.log(`Score: You ${playerScore} - Computer ${computerScore} - Ties ${ties}`);
                 }
 
             }/********************************************************************/
@@ -82,7 +82,7 @@
             if (playerScore > computerScore){
                 console.log("You win the game dude!!!");
             } else if (playerScore < computerScore){
-                console.log("You're lost. COmputer win!!!");
+                console.log("You're lost. Computer win!!!");
             } else {
                 console.log("It's a tie! Will you play again?");
             }/***************************************************************/
